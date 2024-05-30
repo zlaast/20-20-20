@@ -3,7 +3,7 @@ A Windows app to implement the 20-20-20 rule: That is, for every 20 minutes of s
 
 # Installation
 
-Check the **[releases]()** page to download the executable. No installation necessary.
+Check the **[releases](https://github.com/zlaast/20-20-20/releases)** page to download the executable. No installation necessary.
 
 # Other
 
