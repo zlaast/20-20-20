@@ -1,0 +1,86 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "app-20-20-20",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "app": {
+        "hide": true
+      },
+      "shell": {
+        "open": true
+      },
+      "window": {
+        "close": true,
+        "create": true,
+        "hide": true,
+        "minimize": true,
+        "setAlwaysOnTop": true,
+        "setPosition": true,
+        "show": true,
+        "unminimize": true
+      },
+      "fs": {
+        "createDir": true,
+        "exists": true,
+        "readDir": true,
+        "readFile": true,
+        "scope": [
+          "$APPCONFIG",
+          "$APPCONFIG/",
+          "$APPCONFIG/*",
+          "$APPCONFIG/**",
+          "$APPCONFIG/com.app-20-20-20.dev",
+          "$APPCONFIG/com.app-20-20-20.dev/",
+          "$APPCONFIG/com.app-20-20-20.dev/*",
+          "$APPCONFIG/com.app-20-20-20.dev/**"
+        ],
+        "writeFile": true
+      }
+    },
+    "windows": [
+      {
+        "title": "20-20-20",
+        "width": 800,
+        "height": 300
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.app-20-20-20.dev",
+      "icon": [
+        "icons/icon.png",
+        "icons/icon.ico"
+      ],
+      "windows": {
+        "allowDowngrades": true,
+        "certificateThumbprint": null,
+        "digestAlgorithm": null,
+        "nsis": null,
+        "timestampUrl": null,
+        "tsp": false,
+        "webviewFixedRuntimePath": null,
+        "webviewInstallMode": {
+          "silent": true,
+          "type": "downloadBootstrapper"
+        },
+        "wix": null
+      }
+    },
+    "systemTray": {
+      "iconPath": "icons/icon.png"
+    }
+  }
+}

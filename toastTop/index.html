@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/eye.svg" />
+    <link rel="stylesheet" href="../src/assets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification</title>
+</head>
+<body>
+    <div class="flex flex-col">
+        <p class="text-center mt-3">Look at a point 20 feet away for</p>
+        <div id="progress" class="radial-progress text-secondary mx-auto my-2" style="--value:0;" role="progressbar"></div>
+        <div class="stat-desc text-md select-none text-center">seconds</div>
+        <h1 class="font-bold text-center py-2 mt-3 bg-gray-800">20-20-20 Notification</h1>
+    </div>
+</body>
+<script type="module" src="../src/scripts/toast-top.ts"></script>
+</html>
